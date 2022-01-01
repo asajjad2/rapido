@@ -31,3 +31,4 @@ Ideas for future improvement:
   - Add a Cart Section where the user can see their order and not just the total payment.
   - Provide options for add-ons during the payment phase.
   - Use google maps API to show the location of stores.
+  - Make the site mobile-friendly.
