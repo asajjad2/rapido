@@ -6,12 +6,15 @@ Markup done using pure HTML5 in 3 .html files & their styling using CSS3 in a si
 
 The process of making the website consisted of thinking for an idea, its use cases, looking for web on design inspiration, coding the wireframe and then filling on content.
 
+Design inspiration taken from https://www.behance.net
+Keeping a consistent color theme using https://coolors.co/
+
 This is a website for an imaginary fast-food chain & consists of the following sections:
 
 1. The main page starts with a navigation bar providing the ability to jump to the desired section using <a> tags.
 2. This is followed by a section introducing a new burger - I use css ability to style text with fontsize, fontfamily, fontshadow properties.
 3. A brief introduction section where I use fonts taken from google font services. I have also added and styles a button at the end of the section.
-4. The Menu Section. Here I've used a background image to provide lively, fast-food restaurant colors. On top of this background I've displayed the menu on a opaque    div. I've made use of CSS flexbox here to manage the menu entries. I've also put in icons using services from fontawesome.com.
+4. The Menu Section. Here I've used a background image to provide lively, fast-food restaurant colors. On top of this background I've displayed the menu on a opaque    div. I've made use of CSS flexbox here to manage the menu entries. I've also put in icons using services from https://fontawesome.com/.
 5. The deals section where I've built a static carousel using pure CSS.
 6. The "Meal" section to add onto the user's order. Here I've added a button to be clicked when the user has completed his/her order and wants to check out. This      button takes the user to the payments page.
 7. The payment page mainly consists of an HTML form which is linked to formspree.io. It also contains an order summary component.
