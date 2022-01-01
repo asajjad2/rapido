@@ -1,0 +1,720 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+ul{
+    list-style-type: none;
+}
+
+header{
+    max-height: 15vh;
+    display: flex;
+    background-color: #FFF;
+    width: 100%;
+}
+nav {
+    width: 100%;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+nav ul > li {
+    padding: 20px;
+    font-size: 1.05em;
+    color: #1F0D0B;
+}
+
+nav a{
+    color: #000;
+}
+
+nav ul img {
+    transform: translateX(-150px);
+}
+
+#paymentImg{
+    transform: translateX(-0px);
+}
+nav ul button{
+   
+    border-radius: 15px;
+    color: #D70E10;
+    font-weight: 1000;
+    transform: translateX(300px);
+    font-size: 1.05em;
+    padding: 9px;
+    background-color: #000;
+}
+
+nav i{
+    height: 20px;
+    transform: translate(120px,0px);
+    cursor: pointer;
+}
+
+/* home css */
+
+#new{
+
+    color: white;
+    height: 90vh;
+    background-color: #1F0D0B;
+    background-image: url("images/Dopper_FrontPage.png");
+    background-position: 85% 50%; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 30%;
+
+   
+
+}
+.newDiv{
+    transform: translate(140px,100px);
+    color: white;
+    background-color: transparent;
+}
+
+
+#new h2{
+    width: 100%;
+    color: #D70E10;
+    padding-bottom: 20px;
+    font-size: 2.1em;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.hrule{
+    display: inline-block;
+    width:20%; height:2px; background: #D70E10;
+    margin: auto;
+}
+
+.newul{
+    list-style-type: disc;
+}
+
+#new h1{
+    padding-bottom: 30px;
+    font-size: 4.5em;
+    text-shadow: 5px 5px 2px #000;
+}
+
+.newNewDiv{
+    border-radius: 15px;
+    width: 45%;
+    background-color: white;
+    color: black;
+    /* margin: 20px; */
+    font-weight: bold;
+} 
+#new div li,span{
+    padding: 10px;
+    font-size: 1.3em;
+}
+#new div span{
+    color: #1F0D0B;
+    font-size: 1.4em;
+}
+#new ul{
+    display: flex;
+}
+#intro{
+    height: 60vh;
+    background-color: #FFF;
+    color: #1F0D0B;
+    
+}
+#intro h2{
+    font-size: 3em;
+    font-family: 'Corinthia', cursive;
+}
+#intro h3{
+    padding-top:5px;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+}
+.newIntro{
+    transform: translate(150px,40px);
+    
+}
+#intro p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+#intro .btn{
+
+
+    margin-top: 15px;
+    background-color: #D70E10;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding: 7px;
+    border-radius: 10px;
+    width: 150px;
+    
+}
+
+/* home css ends */
+/* signIn css */
+
+.signInSection{
+    height: 82vh;
+    background-image: url("images/signinbg.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signInSection .signInUp{
+
+    border-radius: 40px;
+    background-color: #FFF;
+    align-items: center;
+    width: 70%;
+    height: 80%;
+    display: flex;
+
+}
+
+.signInSection .signIn{
+
+    color: white;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 50%;
+    height: 100%;
+    background-color: #D70E10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.signInSection .signIn > div{
+    padding: 10px;
+    font-size: 1.3em;
+    
+}
+
+.signInSection .signIn h1{
+    text-align: center;
+    font-family: 'Corinthia', cursive;
+}
+
+
+.signInSection .signIn h3{
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: 900;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+.signInSection .signIn .icons,.btn{
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 20px;
+}
+
+.signInSection .signIn .icons:hover{
+    cursor: pointer;
+}
+
+
+.signInSection .signIn input{
+    width: 300px;
+    padding: 7px;
+    margin: 5px 0px;
+}
+
+.signInSection .signIn button{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.signInSection .signIn button:hover{
+    background-color: white;
+    color: black;
+}
+
+.signInSection .signUp{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.signInSection .signUp .btn{
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 20px;
+}
+
+.signInSection .signUp button{
+    margin-top: 20px;
+    background-color: #D70E10;
+    color: black;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.signInSection .signUp button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* signIn css ends */
+
+
+/* menu css */
+
+.menu{
+    background-image: url("images/menubg.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image
+    background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 170vh;
+    text-align: center;
+}
+
+.menu .main-heading{
+    
+    color: #D70E10;
+    font-family: 'Corinthia', cursive;
+    font-size: 4em;
+    text-decoration: underline;
+    background-color: #FFF;
+    background: rgba(255,255,255, 0.6);
+    border-radius: 10px;
+    transform: translateY(20px);
+    padding: 20px;
+    width: 898.8px;
+}
+
+.menu > div > h2{
+
+    padding: 10px;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 1.8em;
+    margin: 30px;
+    color: #1F0D0B;
+    background-color: #FFF;
+    background: rgba(255,255,255, 0.6);
+    border-radius: 10px;
+    width: 898.8px;
+    
+
+}
+
+.menu > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.menu .main{
+    width: 70%;
+    height: 70%;
+    /* border: #D70E10 1px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    background: rgba(255,255,255, 0.6);
+    border-radius: 5px;
+}
+
+.menu .card{
+    padding-left: 10px;
+    padding-top: 0px;
+    text-align: left;
+    width: 45%;
+    height: 20%;
+    /* border: #000 1px solid; */
+    margin: 0px 5px;
+    
+}
+
+.menu .card h1{
+    font-size: 1.4em;
+    padding-bottom: 0px;
+    color: #1F0D0B;
+    /* text-decoration: underline; */
+}
+
+.menu .card p{
+  padding: 5px 0 15px 0;
+}
+
+.menu .card h2{
+    font-size: 1.4em;
+    text-align: center;
+    width: 50%;
+    height: 23%;
+    padding: 3px;
+    color: #D70E10;
+    background-color: #1F0D0B;
+    border-top-right-radius: 10px;
+
+}
+
+.menu .card i{
+    cursor: pointer;
+}
+
+/* menu css ends */
+/* meals css */
+
+.meal{
+
+    background: url("images/fries.png");
+    height: 90vh;
+    background-size: cover;
+    color: white;
+
+}
+
+
+.meal h2,.meal h3{
+    font-family: 'Corinthia', cursive;
+    font-size: 6em;
+    padding: 7% 5% 2% 7%;
+    color: #1F0D0B;
+}
+
+.meal h3{
+    padding-top: 0;
+    font-size: 3em;
+    color: #D70E10;
+    font-weight:900;
+}
+
+.meal p{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0 5% 1% 7%;
+    color: #1F0D0B;
+}
+
+.or{
+    font-family: 'Paytone One', sans-serif;
+    color: #1F0D0B;
+}
+
+.buttonMeal{
+    font-family: 'Paytone One', sans-serif;
+    color: #1F0D0B;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+}
+
+.mealBs{
+    margin-left: 70px;
+}
+
+.buttonMeal:hover,
+.buttonMeal:focus {
+    background-image: linear-gradient(#1F0D0B, #d70e10);
+    color: white;
+    cursor: pointer;
+}
+
+
+/* meals css ends */
+/* deals css */
+.deals{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #1F0D0B;
+}
+
+.sub-heading{
+    color: white;
+    text-decoration: underline;
+}
+
+.deals .main-heading,.deals .card h2{
+    
+    color: #D70E10;
+    font-family: 'Corinthia', cursive;
+    font-size: 4em;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+
+.deals > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.deals .main{
+
+    background-color: #1F0D0B;
+    width: 100%;
+    height: 80%;
+    /* border: #D70E10 1px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+
+.deals .card{
+    padding-left: 10px;
+    padding-top: 5px;
+    text-align: left;
+    width: 25%;
+    height: 90%;
+    /* border: #000 1px solid; */
+    background-color: #fff;
+    margin: 0px 20px;
+    box-shadow: 15px 15px rgba(0,0,0,.15);
+    text-align: center;
+}
+
+.deals .card:hover{
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+    border-radius: 20px ;
+    cursor: pointer;
+}
+
+.deals .card h2{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.3em;
+    margin: 20px 0px;
+}
+
+.deals .card h1{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.3em;
+}
+
+.deals .start,.deals .end{
+    padding-left: 10px;
+    padding-top: 5px;
+    text-align: left;
+    width: 5%;
+    height: 90%;
+    border: #000 1px none;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+}
+
+.deals .offer{
+
+    margin-top: 20px;
+    color: #FFF;
+    background-color: #D70E10;
+    font-size: 1.2em;
+}
+
+.deals .offer4{
+    margin-top: 45px;
+}
+
+.deals .prev{
+    text-decoration: line-through black;
+}
+
+/* deals css ends */
+/* payment css */
+
+.payment{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 100%;
+    height: 110vh;
+    text-align: center;
+    margin: 40px 0 40px 0; 
+    background: url("images/paymentbg.jpg");
+} 
+
+.payment .paymentForm{
+    width: 60%;
+    height: 100%;
+    background-color: #FFF;
+    background: rgba(255,255,255, 0.9); 
+    /* border: #D70E10 3px solid; */
+}
+
+.payment .paymentForm h2{
+    font-family: 'Syncopate', sans-serif;
+    width: 100%;
+    height:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.payment h2 .signIn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
+    line-height: 32px;
+    width: 50%;
+    background-color: #D70E10;
+    color: #1F0D0B;
+
+}
+
+.payment h2 .guest{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
+    line-height: 32px;
+    width: 50%;
+    background-color: #1F0D0B;
+    color: #D70E10;
+}
+
+.payment .orderSummary{
+
+    text-align: left;
+    margin-right: 50px;
+    width: 25%;
+    height: 30%;
+    border: #000 1px solid;
+    padding: 1%;
+    background-color: #FFF;
+    background: rgba(255,255,255, 0.9);
+}
+
+.payment form{
+    text-align: left;
+    margin: 20px;
+}
+
+.payment h3,.payment button{
+    margin: 5px;
+}
+
+
+.payment button{
+    
+    border-radius: 15px;
+    color: #1F0D0B;
+    font-weight: 1000;
+    font-size: 1.05em;
+    padding: 12px;
+    background-color: #D70E10;
+    font-family: "";
+    margin-left: 300px;
+
+}
+
+.payment input{
+
+    margin: 5px;
+    height: 40px;
+    padding: 20px;
+
+}
+
+.payment #street{
+    width: 90%;
+}
+
+.payment #city, .payment #state{
+    width: 44%;
+}
+
+#inst{
+    width: 90%;
+    height: 60px;
+    margin-left: 6px;
+}
+
+.orderSummary h2,h4{
+    font-family: 'Syncopate', sans-serif;
+}
+
+.orderSummary h2,.orderSummary p, .orderSummary h4{
+    margin: 15px;
+} 
+
+/* payment css ends */
+
+
+
+
+footer{
+    height: 20vh;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div{
+    margin: 30px;
+}

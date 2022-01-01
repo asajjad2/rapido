@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapido Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a5c093ea5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        
+        <nav>
+            <ul>
+                 <a href="index.html"> <img src="images/logo1.png" alt="logo" height="100px" id="paymentImg"></a>
+                <!-- <li>
+                   <a href="index.html">Home</a> 
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="cart.html">Cart</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="deals.html">Deals</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="payment.html">Payment</a>
+                </li>
+                <li>|</li>
+                <li> <a href="signIn.html">Sign-In</a> </li>
+                <a href="signIn.html"><i class="fas fa-user fa-2x"></i></a> -->
+            </ul>
+            <hr>
+        </nav>
+       
+    </header>
+
+    <div class="payment">
+       
+            <div class="paymentForm">
+               <h2> 
+                   <a href="signIn.html" class="guest">Sign-In</a>  
+                   <a href="#" class="signIn">CheckOut as Guest</a>
+                </h2>
+                <form action="https://formspree.io/f/xzbozvbe"
+                method="POST">
+                    <h3>Name</h3>
+                    <input type="text" placeholder="First Name" required>
+                    <h3>Email</h3>
+                    <input type="email" placeholder="xyz@xyzmail.com" required>
+                    <h3>Phone</h3>
+                    <input type="tel" placeholder="+92-0000000000">
+                    <h3>Address</h3>
+                    <input type="text" id="street" placeholder="Street Address">
+                    <input type="text" id="city" placeholder="City">
+                    <input type="text" id="state" placeholder="State / Province">
+                    <h3>Special Instructions</h3>
+                    <textarea id="inst" cols="30" rows="10" required></textarea>
+                    <h3>Note: Kindly review your order & billing before submitting.</h3> 
+                    <div class="submitButton">
+                        <button> <a href="index.html" style="color: #1F0D0B; text-decoration: none;">Submit</a></button>
+                    </div>
+                    
+                    
+                </form>
+            </div>
+            <div class="orderSummary">
+                <h2>Order Summary</h2>
+                <p>Subtotal &emsp; PKR 1220</p>
+                <p>Delivery &emsp; PKR 100</p>
+                <hr>
+                <h4>Total &emsp; &emsp; PKR 1320</h4>
+
+            </div>
+      
+    </div>
+
+    <footer>
+        <img src="images/logo1.png" alt="logo"  height="120px">
+        <div class="footnotes">
+            <h3>Address</h3>
+            <p>Jinnah Avenue,<br>Islamabad 46000<br>Pakistan</p>
+        </div>
+        <div class="footnotes">
+            <h3>Contact Us</h3>
+            <p>complaints@Rapido.com</p>
+            <p>+92 302 3290120</p>
+        </div>
+        <div class="footnotes">
+            <h3>Opening Hours</h3>
+            <p>Monday - Saturday</p>
+            <p>10:00 AM - 2:00 AM</p>
+        </div>
+    </footer>
+
+</body>
+</html>
