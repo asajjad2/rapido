@@ -209,7 +209,7 @@ nav i{
 
 .signInSection .signIn h1{
     text-align: center;
-    font-family: 'Corinthia', cursive;
+    /* font-family: 'Corinthia', cursive; */
 }
 
 
@@ -224,7 +224,7 @@ nav i{
 .signInSection .signIn .icons,.btn{
    display: flex;
    justify-content: space-around;
-   margin-bottom: 20px;
+   margin: 5%;
 }
 
 .signInSection .signIn .icons:hover{
@@ -646,7 +646,7 @@ nav i{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-align: center;
 }
 
@@ -690,6 +690,7 @@ nav i{
 }
 
 .payment form{
+    
     text-align: left;
     margin: 20px;
 }
@@ -698,24 +699,50 @@ nav i{
     margin: 5px;
 }
 
+.payment .Buttons{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 .payment button{
     
     border-radius: 15px;
-    color: #1F0D0B;
-    font-weight: 1000;
+    font-weight: bold;
     font-size: 1.05em;
-    padding: 12px;
-    background-color: #D70E10;
-    margin-left: 300px;
+    padding: 12px 20px;
+    margin-right: 2%;
+    background-color: #1F0D0B;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 0 #1F0D0B;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    color: white;
 
 }
 
+.payment button a{
+    color: white;
+}
+
+.payment button:hover{
+    color: #1F0D0B;
+    cursor: pointer;
+    box-shadow: inset 400px 0 0 0 white;
+}
+
+
+.payment button:hover > a{
+    color: #1F0D0B;
+}
 .payment input{
 
     margin: 5px;
     height: 40px;
-    padding: 20px;
+    padding: 20px 0px 20px 5px;
 
 }
 
