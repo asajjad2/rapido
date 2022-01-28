@@ -5,6 +5,8 @@
     
 }
 
+
+
 body{
     width: 100%;
     height: 100%;
@@ -25,6 +27,7 @@ header{
 }
 nav {
     width: 100%;
+    float: right;
 }
 
 nav > ul{
@@ -43,8 +46,9 @@ nav a{
     color: #000;
 }
 
-nav ul img {
-    transform: translateX(-150px);
+header img {
+    float: left;
+    transform: translateX(130px);
 }
 
 #paymentImg{
@@ -74,10 +78,10 @@ nav i{
     color: white;
     height: 90vh;
     background-color: #1F0D0B;
-    background-image: url("images/Dopper_FrontPage.png");
+    background-image: url(images/Dopper_FrontPage.png);
     background-position: 85% 50%; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: 30%;
+    background-size: 35%;
 
    
 
@@ -89,7 +93,7 @@ nav i{
 }
 
 
-#new h2{
+#new .whatsNew{
     width: 100%;
     color: #D70E10;
     padding-bottom: 20px;
@@ -109,7 +113,7 @@ nav i{
 
 #new h1{
     padding-bottom: 30px;
-    font-size: 4.5em;
+    font-size: 5em;
     text-shadow: 5px 5px 2px #000;
 }
 
@@ -139,34 +143,23 @@ nav i{
     
 }
 #intro h2{
-    font-size: 3em;
+    font-size: 4em;
     font-family: 'Corinthia', cursive;
 }
 #intro h3{
     padding-top:5px;
-    font-size: 1.3em;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 .newIntro{
-    transform: translate(150px,40px);
+    transform: translate(140px,60px);
     
 }
 #intro p{
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
-}
-#intro .btn{
-
-
-    margin-top: 15px;
-    background-color: #D70E10;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    padding: 7px;
-    border-radius: 10px;
-    width: 150px;
-    
+    font-size: 1.2em;
 }
 
 /* home css ends */
@@ -174,7 +167,7 @@ nav i{
 
 .signInSection{
     height: 82vh;
-    background-image: url("images/signinbg.jpg");
+    background-image: url(images/signinbg.jpg);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
@@ -301,7 +294,7 @@ nav i{
 /* menu css */
 
 .menu{
-    background-image: url("images/menubg.jpg");
+    background-image: url(images/menubg.jpg);
     background-position: center; /* Center the image */
     background-repeat: repeat; /* Do not repeat the image
     background-size: cover; */
@@ -316,8 +309,8 @@ nav i{
 .menu .main-heading{
     
     color: #D70E10;
-    font-family: 'Corinthia', cursive;
-    font-size: 4em;
+    /* font-family: 'Corinthia', cursive; */
+    font-size: 3em;
     text-decoration: underline;
     background-color: #FFF;
     background: rgba(255,255,255, 0.6);
@@ -330,7 +323,7 @@ nav i{
 .menu > div > h2{
 
     padding: 10px;
-    font-family: 'Paytone One', sans-serif;
+    /* font-family: 'Paytone One', sans-serif; */
     font-size: 1.8em;
     margin: 30px;
     color: #1F0D0B;
@@ -408,61 +401,93 @@ nav i{
 
 .meal{
 
-    background: url("images/fries.png");
+    position: relative; 
     height: 90vh;
-    background-size: cover;
-    color: white;
+    width: 100%;
+
+    
+   
 
 }
 
+.meal::before{
+    content: "";
+      background-image: url('images/fries.png');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
+    
+    
+}
 
-.meal h2,.meal h3{
+
+.meal h2{
+    position: relative;
     font-family: 'Corinthia', cursive;
     font-size: 6em;
-    padding: 7% 5% 2% 7%;
+    padding: 7% 5% 2% 140px;
+    color: #1F0D0B;
+}
+
+
+
+.meal p,.meal h3{
+    position: relative;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0 5% 1% 140px;
     color: #1F0D0B;
 }
 
 .meal h3{
-    padding-top: 0;
-    font-size: 3em;
     color: #D70E10;
     font-weight:900;
+    font-size: 2.2em;
 }
 
-.meal p{
-    font-size: 2em;
-    font-weight: bold;
-    padding: 0 5% 1% 7%;
-    color: #1F0D0B;
-}
 
-.or{
+.buttonMeal,.pay{
+    position: relative;
     font-family: 'Paytone One', sans-serif;
-    color: #1F0D0B;
+    color: white;  
+    padding: 20px;
+    width: 14%;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1em;
+    
 }
 
 .buttonMeal{
-    font-family: 'Paytone One', sans-serif;
-    color: #1F0D0B;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: white;
-    border: none;
+    background-color: #1F0D0B;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 0 #1F0D0B;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
 }
 
 .mealBs{
-    margin-left: 70px;
+    position: relative;
+    margin: 2% 0 0px 140px;
 }
 
 .buttonMeal:hover,
 .buttonMeal:focus {
-    background-image: linear-gradient(#1F0D0B, #d70e10);
-    color: white;
+    color: #1F0D0B;
     cursor: pointer;
+    box-shadow: inset 400px 0 0 0 white;
 }
 
+.pay{
+    background-color: white;
+    font-size: 0.9em;
+    color: #1F0D0B;
+}
 
 /* meals css ends */
 /* deals css */
@@ -485,8 +510,8 @@ nav i{
 .deals .main-heading,.deals .card h2{
     
     color: #D70E10;
-    font-family: 'Corinthia', cursive;
-    font-size: 4em;
+    /* font-family: 'Corinthia', cursive; */
+    font-size: 3em;
     text-decoration: underline;
     margin: 10px;
 }
@@ -517,8 +542,7 @@ nav i{
 }
 
 .deals .card{
-    padding-left: 10px;
-    padding-top: 5px;
+   
     text-align: left;
     width: 25%;
     height: 90%;
@@ -527,25 +551,39 @@ nav i{
     margin: 0px 20px;
     box-shadow: 15px 15px rgba(0,0,0,.15);
     text-align: center;
+    border-radius: 20px ;
 }
 
 .deals .card:hover{
-    box-shadow: 10px 10px rgba(0,0,0,.25);
-    border-radius: 20px ;
+    box-shadow: 10px 10px rgba(1,1,1,.25);
     cursor: pointer;
 }
 
+.deals .card:hover > .dealsImg{
+    height: 48%;
+    margin: 4% 0;
+}
+
 .deals .card h2{
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1.3em;
-    margin: 20px 0px;
+    /* font-family: 'Syncopate', sans-serif; */
+    font-size: 1.1em;
+    margin: 7% 0 0%;
+    /* background-color: #d70e10; */
+    height: 13%;
 }
 
 .deals .card h1{
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1.3em;
+    /* font-family: 'Syncopate', sans-serif; */
+    font-size: 1.4em;
+    height: 13%;
+    /* background-color: aqua; */
 }
 
+.deals img{
+    height: 45%;
+    margin: 7% 0px;
+    /* background-color: #1F0D0B; */
+}
 .deals .start,.deals .end{
     padding-left: 10px;
     padding-top: 5px;
@@ -563,15 +601,17 @@ nav i{
 
 .deals .offer{
 
-    margin-top: 20px;
+    margin: 0 0 0 7%;
+    height: 7%;
     color: #FFF;
     background-color: #D70E10;
     font-size: 1.2em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
 }
 
-.deals .offer4{
-    margin-top: 45px;
-}
+
 
 .deals .prev{
     text-decoration: line-through black;
@@ -667,7 +707,6 @@ nav i{
     font-size: 1.05em;
     padding: 12px;
     background-color: #D70E10;
-    font-family: "";
     margin-left: 300px;
 
 }
@@ -708,13 +747,38 @@ nav i{
 
 
 footer{
-    height: 20vh;
+    overflow: hidden;
+    height: 25vh;
     background-color: #000;
     color: white;
     display: flex;
     justify-content: space-around;
 }
 
-footer div{
-    margin: 30px;
+footer .footerImg{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0px 2% 5%;
+
 }
+
+.footNotesContainer{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7%;
+    align-items: baseline;
+}
+
+.footNotesContainer div{
+    margin: 3% 5% 0px 0px ;
+}
+
+.footNotesContainer p{
+    line-height: 25px;
+}
+
+
