@@ -455,26 +455,60 @@ nav i{
     font-family: 'Paytone One', sans-serif;
     color: white;  
     padding: 20px;
-    width: 14%;
-    border-radius: 10px;
+    /* width: 14%; */
     border: none;
     font-size: 1.1em;
     
 }
 
+.mealBs{
+
+    position: relative;
+    margin: 2% 0 0px 140px;
+    border: solid 2px #1F0D0B;
+    /* border-radius: 10px; */
+    width: 30%;
+    height: 10%;
+    overflow: hidden;
+    display: flex;
+
+    
+}
+
 .buttonMeal{
+
     background-color: #1F0D0B;
     font-weight: bold;
     box-shadow: inset 0 0 0 0 #1F0D0B;
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
 }
 
-.mealBs{
-    position: relative;
-    margin: 2% 0 0px 140px;
+.buttonMeal:hover > a{
+    color: #1F0D0B;
 }
+
+.buttonMeal a{
+    color: white;
+}
+
+
+.mealSpan{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .buttonMeal:hover,
 .buttonMeal:focus {
@@ -625,7 +659,7 @@ nav i{
     justify-content: space-around;
     /* align-items: center; */
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     text-align: center;
     margin: 40px 0 40px 0; 
     background: url("images/paymentbg.jpg");
@@ -695,45 +729,57 @@ nav i{
     margin: 20px;
 }
 
-.payment h3,.payment button{
+.payment h3{
     margin: 5px;
 }
 
-.payment .Buttons{
-    margin-top: 2%;
-    width: 100%;
+.payment .buttonContainer{
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.payment button{
-    
-    border-radius: 15px;
-    font-weight: bold;
-    font-size: 1.05em;
-    padding: 12px 20px;
-    margin-right: 2%;
+.payment .clearCart{
+    background: inherit;
+    border: none;
+    font-size: 1.1em;
+    margin: 2%;
+}
+
+.payment .submit{
     background-color: #1F0D0B;
-    font-weight: bold;
+    width: 30%;
+    color: white;
+    font-size: 1.4em;
+    padding: 1.5%;
+    border: none;
     box-shadow: inset 0 0 0 0 #1F0D0B;
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
-    color: white;
-
 }
 
-.payment button a{
-    color: white;
-}
-
-.payment button:hover{
+.payment .submit:hover{
     color: #1F0D0B;
     cursor: pointer;
-    box-shadow: inset 400px 0 0 0 white;
+    box-shadow: inset 400px 0 0 0 grey;
+
 }
 
+.payment .submit a{
+    color: white;
+}
+
+
+.payment .submit a:hover{
+    color: #1F0D0B;
+}
+
+.payment .clearCart:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 .payment button:hover > a{
     color: #1F0D0B;
