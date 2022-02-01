@@ -40,10 +40,16 @@ nav ul > li {
     padding: 20px;
     font-size: 1.05em;
     color: #1F0D0B;
+    
 }
 
 nav a{
     color: #000;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
 }
 
 header img {
@@ -296,7 +302,7 @@ nav i{
 .menu{
     background-image: url(images/menubg.jpg);
     background-position: center; /* Center the image */
-    background-repeat: repeat; /* Do not repeat the image
+    background-repeat: no-repeat; /* Do not repeat the image
     background-size: cover; */
     display: flex;
     justify-content: center;
@@ -617,6 +623,7 @@ nav i{
     height: 45%;
     margin: 7% 0px;
     /* background-color: #1F0D0B; */
+    transition: 0.5s;
 }
 .deals .start,.deals .end{
     padding-left: 10px;
