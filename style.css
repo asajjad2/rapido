@@ -2,9 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    font-family: 'Work Sans', sans-serif;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
 
 
 body{
@@ -20,7 +23,7 @@ ul{
 }
 
 header{
-    max-height: 15vh;
+    min-height: 15vh;
     display: flex;
     background-color: #FFF;
     width: 100%;
@@ -93,7 +96,7 @@ nav i{
 
 }
 .newDiv{
-    transform: translate(140px,100px);
+    transform: translate(11%,27%);
     color: white;
     background-color: transparent;
 }
@@ -150,7 +153,7 @@ nav i{
 }
 #intro h2{
     font-size: 4em;
-    font-family: 'Corinthia', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 #intro h3{
     padding-top:5px;
@@ -158,12 +161,12 @@ nav i{
     /* font-family: 'Montserrat', sans-serif; */
 }
 .newIntro{
-    transform: translate(140px,60px);
+    transform: translate(11%,60px);
     
 }
 #intro p{
-    padding-top: 10px;
-    padding-bottom: 10px;
+   
+    padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
 }
@@ -317,9 +320,9 @@ nav i{
     color: #D70E10;
     /* font-family: 'Corinthia', cursive; */
     font-size: 3em;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     background-color: #FFF;
-    background: rgba(255,255,255, 0.6);
+    background: rgba(255,255,255, 0.8);
     border-radius: 10px;
     transform: translateY(20px);
     padding: 20px;
@@ -334,7 +337,7 @@ nav i{
     margin: 30px;
     color: #1F0D0B;
     background-color: #FFF;
-    background: rgba(255,255,255, 0.6);
+    background: rgba(255,255,255, 0.8);
     border-radius: 10px;
     width: 70%;
     
@@ -360,20 +363,26 @@ nav i{
     justify-content: center;
     align-items: center;
     background-color: #FFF;
-    background: rgba(255,255,255, 0.6);
+    background: rgba(255,255,255, 0.8);
     border-radius: 5px;
 }
 
 .menu .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding-left: 10px;
     padding-top: 0px;
     text-align: left;
     width: 45%;
-    height: 20%;
+    height: 21%;
     /* border: #000 1px solid; */
     margin: 0px 5px;
+    /* background-color: aqua; */
     
 }
+
 
 .menu .card h1{
     font-size: 1.4em;
@@ -387,14 +396,46 @@ nav i{
 }
 
 .menu .card h2{
-    font-size: 1.4em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
     text-align: center;
-    width: 50%;
+    width: 70%;
     height: 23%;
     padding: 3px;
-    color: #D70E10;
+    color: #F1282A;
     background-color: #1F0D0B;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
+    padding-left: 5%;
+}
+
+.menu .card h2:hover{
+    cursor: pointer;
+    background-color: #392725;
+}
+
+.menu .card span:hover{
+    cursor: default;
+}
+
+
+
+.menu .card h2 .price{
+
+    display: flex;
+    color: #D70E10;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    /* margin-left: 4px; */
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    margin: 2px 2px 2px 2px;
+    border-radius: 7px;
+
 
 }
 
@@ -433,8 +474,8 @@ nav i{
 
 .meal h2{
     position: relative;
-    font-family: 'Corinthia', cursive;
-    font-size: 6em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
     padding: 7% 5% 2% 140px;
     color: #1F0D0B;
 }
@@ -472,7 +513,7 @@ nav i{
     position: relative;
     margin: 2% 0 0px 140px;
     border: solid 2px #1F0D0B;
-    /* border-radius: 10px; */
+    border-radius: 15px;
     width: 30%;
     height: 10%;
     overflow: hidden;
@@ -549,7 +590,7 @@ nav i{
 
 .deals .main-heading,.deals .card h2{
     
-    color: #D70E10;
+    color: #F1282A;
     /* font-family: 'Corinthia', cursive; */
     font-size: 3em;
     text-decoration: underline;
@@ -608,6 +649,7 @@ nav i{
     /* font-family: 'Syncopate', sans-serif; */
     font-size: 1.1em;
     margin: 7% 0 0%;
+    color: #D70E10;
     /* background-color: #d70e10; */
     height: 13%;
 }
@@ -616,6 +658,7 @@ nav i{
     /* font-family: 'Syncopate', sans-serif; */
     font-size: 1.4em;
     height: 13%;
+    
     /* background-color: aqua; */
 }
 
@@ -681,7 +724,7 @@ nav i{
 }
 
 .payment .paymentForm h2{
-    font-family: 'Syncopate', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     height:10%;
     display: flex;
@@ -741,6 +784,7 @@ nav i{
 }
 
 .payment .buttonContainer{
+    margin-top: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -814,7 +858,7 @@ nav i{
 }
 
 .orderSummary h2,h4{
-    font-family: 'Syncopate', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .orderSummary h2,.orderSummary p, .orderSummary h4{
@@ -825,11 +869,10 @@ nav i{
 
 
 
-
 footer{
     overflow: hidden;
     height: 25vh;
-    background-color: #000;
+    background-color: #141414;
     color: white;
     display: flex;
     justify-content: space-around;
