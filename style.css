@@ -323,7 +323,7 @@ nav i{
     border-radius: 10px;
     transform: translateY(20px);
     padding: 20px;
-    width: 898.8px;
+    width: 70%;
 }
 
 .menu > div > h2{
@@ -336,7 +336,7 @@ nav i{
     background-color: #FFF;
     background: rgba(255,255,255, 0.6);
     border-radius: 10px;
-    width: 898.8px;
+    width: 70%;
     
 
 }
